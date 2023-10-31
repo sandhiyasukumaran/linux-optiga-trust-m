@@ -46,7 +46,7 @@
    * [pkey](#pkey)
    * [pkeyutl](#pkeyutl)
    * [Testing TLS connection with RSA key](#test_tls_rsa)
-   * [Generating a Test Server Certificate](#testServercert)
+   * [Generating a Test Server Certificate](#test_server_cert)
 
 ## <a name="about"></a>About
 
@@ -1396,7 +1396,7 @@ openssl pkeyutl -verify -pubin -inkey e0fd_pub.pem -rawin -in test_sign.txt -sig
 
 #### Scenario where Trust M is on the client :
 
-*Note : To generate a test server certificate refer to [Generating a Test Server Certificate](#testServercert)* 
+*Note : To generate a test server certificate refer to [Generating a Test Server Certificate](#test_server_cert)* 
 
 Creates new RSA 2048 key length and Auth/Enc/Sign usage and generate a certificate  request for OPTIGA™ Trust M key 0xE0FC
 
@@ -1410,7 +1410,7 @@ openssl req -provider trustm_provider \
 
 Issue the certificate with keyUsage=digitalSignature,keyEncipherment on the client side with OPTIGA_Trust_M_Infineon_Test_CA.
 
-*Note : Refer to [Generating a Test Server Certificate](#testServercert)  for openssl.cnf*
+*Note : Refer to [Generating a Test Server Certificate](#test_server_cert)  for openssl.cnf*
 
 ```console
 openssl x509 -req -in test_e0fd.csr \
@@ -1491,7 +1491,7 @@ openssl s_client \
 -client_sigalgs RSA+SHA256
 ```
 
-### <a name="testServercert"></a>Generating a Test Server Certificate
+### <a name="test_server_cert"></a>Generating a Test Server Certificate
  Generate a new key pair and certificate request. Private key is output to private.pem
 
 ```console
