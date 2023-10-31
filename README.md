@@ -1395,7 +1395,7 @@ openssl pkeyutl -verify -pubin -inkey e0fd_pub.pem -rawin -in test_sign.txt -sig
 
 #### Scenario where Trust M is on the client :
 
-*Note : To generate a test server certificate refer to [Generating a Test Server Certificate](#testServercert)* 
+*Note : To generate a test server certificate refer to [Generating a Test Server Certificate](testServercert)* 
 
 Creates new RSA 2048 key length and Auth/Enc/Sign usage and generate a certificate  request for OPTIGA™ Trust M key 0xE0FC
 
@@ -1491,7 +1491,6 @@ openssl s_client \
 ```
 
 ### <a name="testServercert"></a>Generating a Test Server Certificate
-
  Generate a new key pair and certificate request. Private key is output to private.pem
 
 ```console
