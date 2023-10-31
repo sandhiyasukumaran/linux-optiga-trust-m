@@ -1388,7 +1388,7 @@ openssl pkeyutl -provider trustm_provider -inkey 0xe0fd:^  -sign -rawin -in test
 
 Verifying the signature of the raw input data in test_sign.txt using the provided public key in eofd_pub.pem and the signature in test_sign.sig
 
-```
+```console
 openssl pkeyutl -verify -pubin -inkey e0fd_pub.pem -rawin -in test_sign.txt -sigfile test_sign.sig
 ```
 
