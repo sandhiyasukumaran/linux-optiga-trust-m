@@ -46,6 +46,7 @@
    * [pkey](#pkey)
    * [pkeyutl](#pkeyutl)
    * [Testing TLS connection with RSA key](#test_tls_rsa)
+   * [Generating a Test Server Certificate](#testServercert)
 
 ## <a name="about"></a>About
 
@@ -1395,7 +1396,7 @@ openssl pkeyutl -verify -pubin -inkey e0fd_pub.pem -rawin -in test_sign.txt -sig
 
 #### Scenario where Trust M is on the client :
 
-*Note : To generate a test server certificate refer to [Generating a Test Server Certificate](testServercert)* 
+*Note : To generate a test server certificate refer to [Generating a Test Server Certificate](#testServercert)* 
 
 Creates new RSA 2048 key length and Auth/Enc/Sign usage and generate a certificate  request for OPTIGA™ Trust M key 0xE0FC
 
