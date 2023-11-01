@@ -50,7 +50,10 @@
 
 ## <a name="about"></a>About
 
-This is the OpenSSL 3.x API Implementation for Infineon OPTIGA™ Trust M V3 Chip.
+This is a Linux Tools for OPTIGA Trust M1/M3 on Linux platform that consist of:
+
+- [Command Line Interface examples](#cli_usage)
+- [OpenSSL Engine](#provider_usage)
 
 
 ### <a name="prerequisites"></a>Prerequisites
