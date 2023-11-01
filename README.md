@@ -53,7 +53,7 @@
 This is a Linux Tools for OPTIGA Trust M1/M3 on Linux platform that consist of:
 
 - [Command Line Interface examples](#cli_usage)
-- [OpenSSL Engine](#provider_usage)
+- [OpenSSL Provider](#provider_usage)
 
 
 ### <a name="prerequisites"></a>Prerequisites
